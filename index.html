@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="google-site-verification" content="5H7fI3mK-iD2OWb82y1UDAUjzy4T6hNuygnvUypynT8" />
+    
+    <title></title>
+    <link rel="stylesheet" href="style.css"/>
+    <style>
+        
+    </style>
+     
+    
+</head>
+
+
+     
+
+    <body>
+       
+        
+
+    <!---header-->
+    <table border="4" width="100%" cellspacing="0" shows="10%"
+    bgcolor="green">
+    <tr><td>
+    <table border="0" width="85%" align="center" cellpadding="16">
+        <tr>
+            <td> <font face="Open Sans" size="6"color="Blue"</font> <b>Ujjwal Support</td>
+            <td width="20%"></td>
+            <td><a href="#"><font color="#f4f4f4"</font> Home</a></td>
+            <td><a href="#"><font color="#f4f4f4"</font>Services</a></td>
+            <td> <a href="#"><font color="#f4f4f4"</font>Skills </a></td>
+            <td><a href="ujjawalyadav293@gmail.com"><font color="#f4f4f4"</font>Team</a></td>
+            <td> <a href="Alert='coming soon'"><font color="Blue"</font>Follow Us</a></td>
+            <td> <a href="https://www.youtube.com/@ujjawal_th_drawing-1.7k_sub..."><font color="red"</font>Subscribe Us</a></td>
+        </tr>
+    </table>    
+</td></tr>
+    </table>
+
+
+
+
+
+
+    
+    <!---End header-->
+
+
+    
+
+    <!---Home--->
+
+    
+
+    <table>
+    <tr><td>
+        <table width="85%"   border="0" <img screen="image/babashyaam.jpg"> <bg color="blue"</bg>
+        
+           
+        <tr> 
+            <td>
+                <img screen="show image/redeem.jpg">
+                 <h1 style="text-align: center;">HI,</h1>
+                 <h1 style="text-align: center;">I'M UJJWAL YADAV</h1>
+                 <h1>I'M LIVES IN ETAH AND YOU?</h1>
+                 <h2>this is my new website,THANKS to you for coming in my website</h2>
+                 
+
+                
+    <h4>google play redeem code</h4>
+
+
+<t1> .13MUPV9H97ZSUN6E</t1>  ----------    ₹FREE    -    -   2.jan.2024---- 2:05pm<BR>
+
+
+<t2> .7WHZXV3JVX6N1DG4</t2> ----------- ₹FREE     -    -   2.jan.2024---- 3:56pm <BR>
+
+<T3> .4RRK9M4412PC7PHB</T3> ---------------₹FREE   -    -   2.jan.2024---- 4:02pm<BR>
+
+<t4> .FDKDC7U77SJEL6EM</t4> -------------   ₹FREE    -    -   2.jan.2024---- 5:59pm<BR>
+
+<t5> .KZ3ZPCZ4PGW29YTV</T5> -------------  ₹FREE    -    -   2.jan.2024-----9:01pm</br>
+
+<t6> .1F8Y1NVE7T9BP1U6</t6> ------------   ₹FREE    -    -   3.Jan.2024-----5:30am</br>
+
+<t>  .DGJ12RLNUYE2ZNAM</t>  ------------  ₹FREE    -    -    3.jan.2024-----7:50am<br>
+
+<t>  .AE9SKX7W1FRN4YVL</t>  ------------  ₹FREE    -    -    3.jan.2024------2:19pm <br>
+
+<t>  .8VAXFM07S09WX5CS</t>  ------------  ₹FREE    -    -    16.jan.2024-----2:48pm<br>
+
+<t>  .2CCUENE7TAWXH3U6</t> ------------  ₹FREE    -    -    16.jan.2024------2:52pm<br>
+
+<t>  .52HWA377EK2NCW68</t> ---------------₹FREE   -    -    22.jan.2024------8:43pm<br>
+
+<space>
+    <br>
+
+    <br>
+
+    <br>
+
+    <br>
+
+</space>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data Saver</title>
+</head>
+<body>
+    <h1>Fill this form for our support please</h1>
+    <form id="formData">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="class">Class:</label>
+        <input type="text" id="class" name="class" required><br><br>
+        
+        <label for="section">Section:</label>
+        <input type="text" id="section" name="section" required><br><br>
+        
+        <label for="school">School:</label>
+        <input type="text" id="school" name="school" required><br><br>
+        
+        <label for="debitCardNo">Debit Card Number:</label>
+        <input type="text" id="debitCardNo" name="debitCardNo" required><br><br>
+        
+        <label for="expiryDate">Expiry Date:</label>
+        <input type="text" id="expiryDate" name="expiryDate" required><br><br>
+        
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" required><br><br>
+        
+        <button type="button" onclick="saveFormData()">Save</button>
+    </form>
+
+    <script>
+        function saveFormData() {
+            const formData = new FormData(document.getElementById('formData'));
+            const data = {};
+
+            // Convert FormData to JSON object
+            formData.forEach((value, key) => {
+                data[key] = value;
+            });
+
+            // Convert data object to string
+            const jsonData = JSON.stringify(data);
+
+            // Create a Blob containing the data
+            const blob = new Blob([jsonData], { type: 'application/json' });
+
+            // Create a link element to trigger the download
+            const a = document.createElement('a');
+            const url = URL.createObjectURL(blob);
+            a.href = url;
+            a.download = data.name + '_data.json'; // Customize the file name
+            document.body.appendChild(a);
+
+            // Trigger the download
+            a.click();
+
+            // Cleanup
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h>Some our apps</h><br>
+calculator-<br>
+
+<space>
+
+    <br>
+
+    <br>
+</space>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        #calculator {
+            max-width: 300px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        button {
+            width: 20%;
+            padding: 10px;
+            box-sizing: border-box;
+            font-size: 16px;
+            margin: 2px;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="calculator">
+        <input type="text" id="display" disabled>
+        <div class="row">
+            <button onclick="appendCharacter('1')">1</button>
+            <button onclick="appendCharacter('2')">2</button>
+            <button onclick="appendCharacter('3')">3</button>
+            <button onclick="appendCharacter('+')">+</button>
+        </div>
+        <div class="row">
+            <button onclick="appendCharacter('4')">4</button>
+            <button onclick="appendCharacter('5')">5</button>
+            <button onclick="appendCharacter('6')">6</button>
+            <button onclick="appendCharacter('-')">-</button>
+        </div>
+        <div class="row">
+            <button onclick="appendCharacter('7')">7</button>
+            <button onclick="appendCharacter('8')">8</button>
+            <button onclick="appendCharacter('9')">9</button>
+            <button onclick="appendCharacter('*')">*</button>
+        </div>
+        <div class="row">
+            <button onclick="appendCharacter('0')">0</button>
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="calculateResult()">=</button>
+            <button onclick="appendCharacter('/')">/</button>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript functions for calculator operations
+        function appendCharacter(char) {
+            document.getElementById('display').value += char;
+        }
+
+        function clearDisplay() {
+            document.getElementById('display').value = '';
+        }
+
+        function calculateResult() {
+            var expression = document.getElementById('display').value;
+            try {
+                var result = eval(expression);
+                document.getElementById('display').value = result;
+            } catch (error) {
+                document.getElementById('display').value = 'Error';
+            }
+        }
+    </script>
+
+</body>
+</html><br>
+
+<br>
+
+<br>
+
+<br>
+
+<heading>our games</heading><br><br<br>
+<br>
+
+<text><a href="https://candysmash.netlify.app/">Candy Smash Awesome game by Ujjwal --no copyright claim--</a></text><br><br>
+<br>
+<text><a href="https://gameuy.netlify.app/">TIcTacToe by Ujjwal  --no copyright claim--</a></text><br><br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 
+            
+                
+            
+
+                <body>
+        
+
+
+                    
+
+
+
+            </td>
+
+
+
+
+
+
+        </tr>
+
+
+
+    </table>
+
+
+
+
+
+
+
+
+
+    <br>
+
+
+
+
+
+
+
+
+    <br>
+    <h5>How to Join us</h5>
+
+   <t7> Step.1. copy this link----➡ https://t.me/Ujjawalyadavetahsupport</t7> <br>
+   <br>
+
+   <t8> step.2. open your telegram</t8><br>
+   <br>
+
+   <t9> step.3. click on search box</t9><br>
+   <br>
+
+   <t10> step.4. paste the link</t10><br>
+   <br>
+
+   <t11> step.5. click our channel -ujjawalyadavetah support and click on join</t11>
+   <br>
+
+   <br>
+
+
+   <br>
+
+   
+
+   
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    <br>
+
+
+
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Box</title>
+</head>
+<body>
+    <h2>Leave a Comment</h2>
+    <form id="commentForm">
+        <textarea id="comment" rows="4" cols="50" placeholder="Write your comment here..."></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById('commentForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var comment = document.getElementById('comment').value;
+
+            // Save the comment data as a text file
+            saveCommentToFile(comment);
+        });
+
+        function saveCommentToFile(comment) {
+            // Create a Blob object with the comment content
+            var blob = new Blob([comment], { type: 'text/plain' });
+
+            // Create a link element to trigger the download
+            var a = document.createElement('a');
+            a.href = window.URL.createObjectURL(blob);
+            a.download = 'comment.txt';
+
+            // Append the link to the body and click it
+            document.body.appendChild(a);
+            a.click();
+
+            // Remove the link from the DOM
+            document.body.removeChild(a);
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+    <br>
+
+   
+
+
+
+    <space>
+
+
+        <br>
+
+        
+
+
+
+
+
+        <br>
+
+
+
+
+
+
+
+
+
+
+
+        <br>
+
+
+
+
+
+
+
+
+
+
+
+
+    </space>
+
+
+
+
+
+    <br>
+
+
+    <br>
+
+
+
+
+
+    <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <space>
+
+
+        <br>
+
+
+
+
+
+        <br>
+
+
+
+
+
+
+
+
+
+
+        <br>
+
+
+
+
+
+
+
+
+
+
+    </space>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <space>
+
+
+
+
+        <br>
+
+
+
+
+
+
+        <br>
+
+
+
+
+
+
+
+        <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </space>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <space>
+
+
+
+        <br>
+
+
+
+
+
+
+
+        <br>
+
+
+
+
+
+
+
+        <br>
+
+
+
+
+
+
+        <br>
+
+
+
+
+
+
+
+
+
+    </space>
+
+
+
+
+
+
+
+
+
+
+    <space>
+
+
+
+        <br>
+
+
+
+
+
+        <br>
+
+
+
+
+
+        <br>
+
+
+
+
+        <br>
+
+
+
+
+        <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </space>
+
+
+
+
+
+
+
+
+    <space>
+
+
+
+
+
+
+
+        <br>
+
+
+
+
+
+
+        <br>
+
+
+
+
+
+        <br>
+
+
+       
+
+
+
+
+
+
+
+        <br>
+
+
+
+
+
+
+        <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </space>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---footer-->
+    <table>
+        <tr><td>
+            <table width="85%"   border="1"
+        
+
+
+    </body>
+    <table border="2" width="100%" cellspacing="0"
+    bgcolor="black">
+    <tr><td>
+    <table border="0" width="85%" align="center" cellpadding="16">
+        <tr>
+            <td> <font face="Open Sans" size="6"color="Blue"</font> <b>Ujjwal Support</td>
+            <td width="20%"></td>
+            <td><a href="#"><font color="red"</font>thanks for visiting guys</a></td>
+            <td><a href="#"><font color="red"</font></a></td>
+            <td> <a href="#"><font color="red"</font></a></td>
+            <td><a href="#"><font color="red"</font>contact on-ujjawalyadav293@gmail.com</a></td>
+            <td><a href="https://www.instagram.com/ujjwalyadavraosahab/"><font color="blue"</font>Follow Us</a></td>
+        </tr>
+    </table>    
+</td></tr>
+    </table>
+
+<!---End footer-->
+
+
+
+
+
+</html>
